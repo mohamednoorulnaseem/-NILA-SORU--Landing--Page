@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Landing Page</title>
+    <style>
+        /* ...existing code... */
+        .nav-link {
+            color: #333;
+            text-decoration: none;
+        }
+        .nav-link:hover {
+            color: #666;
+        }
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="home">
+        <div class="logo">NILA SORU</div>
+        <h1>Welcome to Our SHOP</h1>
+        <p>Your one-stop solution for all your needs. Join us today and transform the way you work and live.</p>
+        <a href="#internship" class="nav-link">Get Started</a>
+        <nav>
+            <a href="#about" class="nav-link">About Us</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#internship" class="nav-link">Showroom</a>
+        </nav>
+    </div>
+
+    <div id="about" class="section">
+        <h1>About Us</h1>
+        <p>NILA SORU is a vibrant and diverse community.
+            We are the best food Shop.
+            Special Indian Foods.</p>
+        <a href="#home" class="nav-link">Back to Home</a>
+    </div>
+
+    <div id="contact" class="section">
+        <h1>Contact Us</h1>
+        <p>Have questions? Reach out to us at nilasoru@gmail.com or call us at 999999999.</p>
+        <a href="#home" class="nav-link">Back to Home</a>
+    </div>
+
+    <div id="internship" class="section">
+        <h1>Shop at NILA SORU</h1>
+        <p>Experience the New Way of Shopping from NILA SORU, India's No1 Food shop</p>
+        <a href="#home" class="nav-link">Back to Home</a>
+    </div>
+
+    <script>
+        // Show/hide sections based on navigation
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const target = link.getAttribute('href').replace('#', '');
+                document.querySelectorAll('.section').forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.getElementById(target).classList.add('active');
+            });
+        });
+
+        // Show home section on initial load
+        document.getElementById('home').classList.add('active');
+    </script>
+</body>
+</html>
