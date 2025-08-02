@@ -16,7 +16,7 @@ This project was developed during my R&D Internship, focusing on UI/UX design an
 
 *Company:* RD Infro Technology  
 *Role:* UI and UX Development Intern  
-*Duration:* [Month Year] – [Month Year] (e.g., June 2025 – July 2025)  
+*Duration:* [01/2025] – [02/2025] 
 *Work:*  
 - Developed responsive UI/UX for client projects  
 - Created landing pages and improved user interfaces  
